@@ -1,0 +1,253 @@
+body,html {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+
+.product-img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+}
+.product-price-block {
+    display: flex;
+    margin: 5px 0;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .product-card{
+    background-color: #f0f0f093;
+    border-radius: 15px;
+    width: auto;
+  }
+  .product-info{
+    padding: 20px;
+    box-sizing: border-box;
+
+  }
+  .product-title{
+    font-size: 16px;
+    font-weight: bold;
+    word-wrap: break-word;
+    display: block;
+    line-height: 22px;
+  }
+.product-description{
+    font-size: 14px;
+    border-bottom: 6px;
+}
+.product-tax-policy{
+   font-size: 12px;
+}
+.product-price-block .price {
+    font-size: 22px;
+    font-weight: 700;
+    flex: 1;
+  }
+  .product-price-block .discount {
+    font-size: 12px;
+    font-weight: 700;
+    color: #428f13;
+  }
+  .product-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap:20px;
+
+  }
+main .container{
+    padding: 30px;
+}
+
+
+/* Hero section */
+section#hero {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid purple;
+    height: 340px;
+    background: url("../assets/hero_bg.png");
+    background-size: cover;
+    background-position: top center;
+  }
+
+
+.title-container span {
+    display: block;
+    color: white;
+    font-weight: 700;
+  }
+
+.title-container span:first-child {
+    font-size: 40px;
+  }
+
+.title-container span:last-child {
+    font-size: 100px;
+    line-height: 80px;
+  }
+
+header{
+  background-color: #ff3b3c;
+}
+.search{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+.search .form{
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+}
+
+.search .form input{
+  border-radius: 14px;
+  border: none;
+  width: 300px;
+  height: 50px;
+  padding: 20px;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.search .social a{
+  margin: 10px;
+
+}
+.logo{
+  margin-top: 10px;
+}
+.nav{
+  margin-top: 20px;
+  padding: 10px 0;
+}
+.nav ul{
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  margin: 0px 10px;
+  padding: 0;
+}
+.nav ul li a{
+  color: white;
+  font-weight: 700;
+  text-align: left;
+  text-decoration: none;
+
+}
+
+footer{
+  background-color: #7525A7;
+  .container{
+    display: flex;
+    flex-direction: column;
+    padding: 0 50px;
+    
+
+    .columns-container{
+      flex: 1;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      .col{
+        ul{
+          list-style-type: none;
+          padding: 0;
+          li{
+
+            a{
+              text-decoration: none;
+              color: white;
+            }
+          }
+         li.col-main-item{
+            font-weight: bold;
+            padding-bottom: 20px;
+          }
+        }
+      }
+    }
+    .copyright{
+      border-top: 1px solid #ba53fb;
+      text-align: center;
+      color: white;
+      font-weight: bold;
+      padding: 30px 0;
+      box-sizing: border-box;
+     }
+   
+  }
+
+}
+
+
+@media (max-width: 768px){
+  .search .form input{
+    border-radius: 14px;
+    border: none;
+    width: 300px;
+    height: 50px;
+    padding: 20px;
+    box-sizing: border-box;
+    outline: none;
+  }
+
+}
+
+
+@media (max-width: 425px) {
+  .search .form input{
+    border-radius: 10px;
+    border: none;
+    width: 90px;
+    height: 25px;
+    padding: 10px;
+    box-sizing: border-box;
+    outline: none;
+  }
+  .col{
+    margin:5px;
+  }
+  .search .form{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    margin-top: 2px;
+  }
+  .search .logo img{
+    width: 100px;
+  }
+  
+  .product-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap:20px;
+
+  }
+ 
+  .search .social a{
+    margin: 3px;
+  
+  }
+  .nav ul li a{
+    color: white;
+    font-size: 10px;
+    font-weight: 700;
+    text-align: left;
+    text-decoration: none;
+  
+  }
+
+  .title-container span:first-child {
+    font-size: 20px;
+  }
+
+.title-container span:last-child {
+    font-size: 50px;
+    line-height: 80px;
+  }
+}
